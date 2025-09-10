@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #2c3e50;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #1abc9c;
+}
+
+/* Hero Section (About Page Only) */
+.hero {
+  background: linear-gradient(135deg, #70fefe, #16a085);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: #ffeb3b;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+/* Section */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Cards */
+.card {
+  background: #ecf0f1;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #1abc9c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.skills-list li:hover {
+  background: #16a085;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #16a085;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  section {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+/* Skills Page - Centered Points */
+/* Skills Page - Neat Vertical Bullet List */
+/* Skills Page - Centered Under Heading */
+/* Skills Page - Straight Vertical List under Centered Heading */
+.skills-points {
+  list-style-type: disc;
+  list-style-position: outside;  /* bullets outside, neat column */
+  text-align: left;              /* keep items straight */
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 300px;              /* narrow block */
+  margin: 20px auto 0 auto;      /* center block under heading */
+  padding-left: 20px;            /* indent for bullets */
+}
+
+.skills-points li {
+  margin: 6px 0;
+}
+/* Projects Page */
+.projects {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.project-card {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+}
+/* Education Page */
+.education {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.edu-card {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.edu-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Skills Page */
+.skills {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.skill-card {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.skill-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.skill-card ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1em;
+  line-height: 1.8;
+  color: #555;
+}
